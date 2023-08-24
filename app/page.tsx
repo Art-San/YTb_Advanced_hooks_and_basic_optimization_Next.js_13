@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-    </>
+    <h1 className=" text-white text-[36px] font-semibold">
+      Welcom to NextJS world
+    </h1>
   )
 }
