@@ -21,7 +21,7 @@ export default function RootLayout({
       {/* <body className="relative"> */}
       <body className={inter.className}>
         <Navbar />
-        {children}
+        <div className=" flex">{children}</div>
         {/* <Footer /> */}
       </body>
     </html>
