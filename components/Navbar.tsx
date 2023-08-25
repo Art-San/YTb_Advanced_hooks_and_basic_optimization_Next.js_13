@@ -5,28 +5,16 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { RxCross1, RxHamburgerMenu } from 'react-icons/rx'
-
-const menuItems = [
-  { id: 1, name: 'Home', path: '/' },
-  { id: 2, name: 'UseState', path: '/usestate' },
-  { id: 3, name: 'UseEffect', path: '/useeffect' },
-  { id: 4, name: 'UseRef', path: '/useref' },
-  { id: 5, name: 'UseMemo', path: '/usememo' },
-  { id: 6, name: 'UseCallback', path: '/usecallback' },
-  { id: 7, name: 'Hoc', path: '/hoc' },
-  { id: 8, name: 'Memo', path: '/memo' },
-  { id: 9, name: 'CloneElement', path: '/cloneelement' },
-  { id: 10, name: 'Children', path: '/children' }
-]
+import { menuItems } from '@/constants'
+import Image from 'next/image'
 
 const Navbar = () => {
   const pathname = usePathname()
-  console.log('router.pathname', pathname)
 
   // className={
   //   'text-white p-2 ' +
   //   (pathname === item.path
-  //     ? 'bg-white text-black rounded-lg'
+  //     ? 'bg-white text-black rounded-lg text-gray-900'
   //     : '')
   // }
 
@@ -36,14 +24,21 @@ const Navbar = () => {
   }
   return (
     <>
-      <nav className=" bg-black">
+      <nav className=" bg-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-16 md:h-20 ">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <a href="/" className=" text-white">
+                <Image
+                  src={'/logo.svg'}
+                  alt="logo"
+                  width={118}
+                  height={18}
+                  className="object-contain bg-slate-50"
+                />
+                {/* <a href="/" className=" text-white">
                   logo
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="hidden lg:block">
@@ -53,9 +48,9 @@ const Navbar = () => {
                     key={item.id}
                     href={item.path}
                     className={
-                      'text-white p-2 ' +
+                      'text-white text-[15px] p-2 ' +
                       (pathname === item.path
-                        ? 'bg-white text-black rounded-lg'
+                        ? 'bg-white text-gray-900 rounded-lg'
                         : '')
                     }
                   >
@@ -70,9 +65,9 @@ const Navbar = () => {
                 onClick={toggleNavbar}
               >
                 {isClick ? (
-                  <RxCross1 size={30} color="white" />
+                  <RxCross1 size={25} color="white" />
                 ) : (
-                  <RxHamburgerMenu size={30} color="white" />
+                  <RxHamburgerMenu size={25} color="white" />
                 )}
               </button>
             </div>
@@ -88,7 +83,7 @@ const Navbar = () => {
                   className={
                     'text-white block p-2 ' +
                     (pathname === item.path
-                      ? 'bg-white text-black rounded-lg'
+                      ? 'bg-white text-gray-900 rounded-lg'
                       : '')
                   }
                 >
