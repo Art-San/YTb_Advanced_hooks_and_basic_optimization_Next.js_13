@@ -41,7 +41,7 @@ const Navbar = () => {
                     className={
                       'text-white text-[15px] p-2 ' +
                       (pathname === item.path
-                        ? 'bg-white text-slate-800 rounded-lg'
+                        ? 'bg-white text-slate-800 rounded-xl'
                         : '')
                     }
                   >
@@ -74,7 +74,7 @@ const Navbar = () => {
                   className={
                     'text-white block p-2 ' +
                     (pathname === item.path
-                      ? 'bg-white text-slate-800 rounded-lg'
+                      ? 'bg-white text-slate-800 rounded-xl'
                       : '')
                   }
                 >
