@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/accordion'
 import Subtitle from '@/components/typografy/Subtitle'
 import Counter from '@/components/examples/useState/Counter'
+import { Separator } from '@/components/ui/separator'
 
 const useState = () => {
   return (
@@ -33,8 +34,9 @@ const useState = () => {
               </AccordionItem>
             </Accordion>
           </div>
-          <div className=" flex flex-col justify-center mt-10">
+          <div className=" flex flex-col justify-center mt-10 mx-[110px]">
             <Subtitle>Примеры</Subtitle>
+            <Separator />
             <Counter />
           </div>
         </div>
