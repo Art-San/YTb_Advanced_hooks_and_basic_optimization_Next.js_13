@@ -4,11 +4,13 @@ import { Button } from '../ui/button'
 import { BsDownload } from 'react-icons/bs'
 import Image from 'next/image'
 import { Card, CardFooter } from '../ui/card'
+import { useProModal } from '@/hooks/use-pro-modal'
 
 const ahref = '/images/useState.png'
 const ahref500 = '/images/useState500.png'
 
 const Screens = () => {
+  const proModal = useProModal()
   return (
     <div className=" ">
       <Card className=" rounded-lg overflow-hidden">
@@ -17,7 +19,8 @@ const Screens = () => {
             alt="image"
             fill
             src={ahref500}
-            onClick={() => window.open(ahref)}
+            onClick={proModal.onOpen}
+            // onClick={() => window.open(ahref)}
           />
         </div>
       </Card>

@@ -10,6 +10,7 @@ import {
 import Subtitle from '@/components/typografy/Subtitle'
 
 import Counter from '@/components/examples/useState/Counter'
+import Form from '@/components/forma/Forma'
 
 const useState = () => {
   return (
@@ -42,6 +43,7 @@ const useState = () => {
       <div className="flex justify-center">
         <Counter />
       </div>
+      {/* <Form /> */}
     </>
   )
 }

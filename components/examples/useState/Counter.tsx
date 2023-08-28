@@ -1,5 +1,6 @@
 'use client'
 import Images from '@/components/common/Screens'
+import ImageModal from '@/components/ImageModal'
 import SmallTitle from '@/components/typografy/SmallTitle'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
@@ -49,7 +50,11 @@ const Counter = () => {
           </CardWrapper>
         </div>
         <div>
-          <Images />
+          {/* <Images /> */}
+          <ImageModal
+            path="/images/useState.png"
+            path500="/images/useState500.png"
+          />
         </div>
       </div>
     </>
