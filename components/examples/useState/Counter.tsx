@@ -1,5 +1,5 @@
 'use client'
-import Images from '@/components/common/Screens'
+import Screens from '@/components/common/Screens'
 import ImageModal from '@/components/ImageModal'
 import SmallTitle from '@/components/typografy/SmallTitle'
 import { Button } from '@/components/ui/button'
@@ -29,7 +29,7 @@ const Counter = () => {
           <CardWrapper>
             <SmallTitle>Подсчет количества рендеров</SmallTitle>
             <Separator className="mt-4  bg-slate-300" />
-            <p>count: {count}</p>
+            <p className="text-red-600 font-semibold">Count: {count}</p>
 
             <Button
               size={'costom'}
@@ -50,7 +50,7 @@ const Counter = () => {
           </CardWrapper>
         </div>
         <div>
-          {/* <Images /> */}
+          {/* <Screens /> */}
           <ImageModal
             path="/images/useState.png"
             path500="/images/useState500.png"

@@ -11,6 +11,7 @@ import Subtitle from '@/components/typografy/Subtitle'
 
 import Counter from '@/components/examples/useState/Counter'
 import Form from '@/components/forma/Forma'
+import Count from '@/components/examples/useState/Count'
 
 const useState = () => {
   return (
@@ -40,10 +41,10 @@ const useState = () => {
       <div className=" flex flex-col justify-center ">
         <Subtitle>Примеры</Subtitle>
       </div>
-      <div className="flex justify-center">
+      <div className="flex flex-col justify-center">
         <Counter />
+        <Count />
       </div>
-      {/* <Form /> */}
     </>
   )
 }

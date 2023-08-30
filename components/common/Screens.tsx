@@ -19,8 +19,8 @@ const Screens = () => {
             alt="image"
             fill
             src={ahref500}
-            onClick={proModal.onOpen}
-            // onClick={() => window.open(ahref)}
+            // onClick={proModal.onOpen}
+            onClick={() => window.open(ahref)}
           />
         </div>
       </Card>

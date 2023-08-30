@@ -22,11 +22,12 @@ const ImageModal: React.FC<ImageModalProps> = ({ path500, path }) => {
     <div>
       <Image
         onClick={openModal}
-        className="cursor-pointer"
+        className="cursor-pointer w-auto h-auto"
         src={path500}
         alt="your alt text"
         width="110"
         height="110"
+        priority
       />
 
       {isOpen && (
