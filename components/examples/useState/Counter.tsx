@@ -24,8 +24,9 @@ const Counter = () => {
 
   return (
     <>
-      <div className="flex items-center gap-5 flex-wrap justify-center">
-        <div>
+      {/* <div className="flex items-center flex-wrap justify-center"> */}
+      <div className="flex items-center justify-center">
+        <div className="flex px-[50px] py-[10px] w-full">
           <CardWrapper>
             <SmallTitle>Подсчет количества рендеров</SmallTitle>
             <Separator className="mt-4  bg-slate-300" />
@@ -53,7 +54,7 @@ const Counter = () => {
           {/* <Screens /> */}
           <ImageModal
             path="/images/useState.png"
-            path500="/images/useState500.png"
+            path500="/images/useState_500.png"
           />
         </div>
       </div>

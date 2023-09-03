@@ -16,11 +16,11 @@ import Count from '@/components/examples/useState/Count'
 const useState = () => {
   return (
     <>
-      <div className="flex justify-center">
-        <Title>UseState</Title>
-      </div>
+      {/* <div className=" flex flex-col">
+        <div className="flex justify-center">
+          <Title>UseState</Title>
+        </div>
 
-      <div className="">
         <div className="flex justify-center mx-6 sm:mx-4 md:mx-20 lg:mx-32 xl:mx-64">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
@@ -36,12 +36,13 @@ const useState = () => {
             </AccordionItem>
           </Accordion>
         </div>
-      </div>
+      </div> */}
 
-      <div className=" flex flex-col justify-center ">
+      {/* <div className=" flex flex-col justify-center ">
         <Subtitle>Примеры</Subtitle>
-      </div>
-      <div className="flex flex-col justify-center">
+      </div> */}
+      <div className="flex flex-col items-center w-[500px] mx-auto">
+        <Subtitle>Примеры</Subtitle>
         <Counter />
         <Count />
       </div>
