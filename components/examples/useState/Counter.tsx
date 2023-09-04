@@ -11,11 +11,10 @@ const Counter = () => {
   const [count, setCount] = useState(0)
 
   const handeleIncrement = () => {
-    // setCount(count + 1) эти два
-    // setCount(count + 1) схлопнутся
-    setCount((prevState) => prevState + 1)
-    setCount((prevState) => prevState + 1)
-    // console.log('count', count)
+    setCount(count + 1) // эти два
+    // setCount(count + 1) // схлопнутся
+    // setCount((prevState) => prevState + 1)
+    // setCount((prevState) => prevState + 1)
   }
 
   const handleDecrement = () => {
@@ -23,42 +22,39 @@ const Counter = () => {
   }
 
   return (
-    <>
-      {/* <div className="flex items-center flex-wrap justify-center"> */}
-      <div className="flex items-center justify-center">
-        <div className="flex px-[50px] py-[10px] w-full">
-          <CardWrapper>
-            <SmallTitle>Подсчет количества рендеров</SmallTitle>
-            <Separator className="mt-4  bg-slate-300" />
-            <p className="text-red-600 font-semibold">Count: {count}</p>
+    <div className="flex items-center justify-center">
+      <div className="flex px-[50px] py-[10px] w-full">
+        <CardWrapper>
+          <SmallTitle>Подсчет количества рендеров</SmallTitle>
+          <Separator className="mt-4  bg-slate-300" />
+          <p className="text-red-600 font-semibold">Count: {count}</p>
 
-            <Button
-              size={'costom'}
-              variant={'positive'}
-              onClick={handleDecrement}
-            >
-              минус
-            </Button>
-            <Button
-              size={'costom'}
-              variant={'warning'}
-              onClick={handeleIncrement}
-            >
-              плюс
-            </Button>
-            {/* <button className="bg-[#FFC107] m-1 px-4 py-2 rounded-md"onClick={handleDecrement}>минус</button> */}
-            {/* <button className="bg-[#0D6EFD] m-1 px-4 py-2 rounded-md text-white" onClick={handeleIncrement}>плюс</button> */}
-          </CardWrapper>
-        </div>
-        <div>
-          {/* <Screens /> */}
-          <ImageModal
-            path="/images/useState.png"
-            path500="/images/useState_500.png"
-          />
-        </div>
+          <Button
+            size={'costom'}
+            variant={'positive'}
+            onClick={handleDecrement}
+          >
+            минус
+          </Button>
+          <Button
+            size={'costom'}
+            variant={'warning'}
+            onClick={handeleIncrement}
+          >
+            плюс
+          </Button>
+          {/* <button className="bg-[#FFC107] m-1 px-4 py-2 rounded-md"onClick={handleDecrement}>минус</button> */}
+          {/* <button className="bg-[#0D6EFD] m-1 px-4 py-2 rounded-md text-white" onClick={handeleIncrement}>плюс</button> */}
+        </CardWrapper>
       </div>
-    </>
+      <div>
+        {/* <Screens /> */}
+        <ImageModal
+          path="/images/useState.png"
+          path500="/images/useState_500.png"
+        />
+      </div>
+    </div>
   )
 }
 

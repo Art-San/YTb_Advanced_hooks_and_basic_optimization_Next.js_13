@@ -29,7 +29,7 @@ const Count = () => {
       <div className="">
         <ImageModal
           path="/images/useState_count.png"
-          path500="/images/useState500.png"
+          path500="/images/useState_500.png"
         />
       </div>
     </div>

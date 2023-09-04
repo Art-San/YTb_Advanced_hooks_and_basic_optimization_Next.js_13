@@ -12,6 +12,9 @@ import Subtitle from '@/components/typografy/Subtitle'
 import Counter from '@/components/examples/useState/Counter'
 import Form from '@/components/forma/Forma'
 import Count from '@/components/examples/useState/Count'
+import Click from '@/components/examples/useState/Click'
+import ExampleBad from '@/components/examples/useState/ExampleBad'
+import ExampleColor from '@/components/examples/useState/ExampleColor'
 
 const useState = () => {
   return (
@@ -41,10 +44,13 @@ const useState = () => {
       {/* <div className=" flex flex-col justify-center ">
         <Subtitle>Примеры</Subtitle>
       </div> */}
-      <div className="flex flex-col items-center w-[500px] mx-auto">
+      <div className="flex flex-col items-center w-[1120px] mx-auto">
         <Subtitle>Примеры</Subtitle>
         <Counter />
-        <Count />
+        {/* <Count /> */}
+        {/* <Click /> */}
+        {/* <ExampleBad /> */}
+        <ExampleColor />
       </div>
     </>
   )
