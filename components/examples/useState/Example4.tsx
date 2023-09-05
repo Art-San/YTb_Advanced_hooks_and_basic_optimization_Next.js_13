@@ -10,10 +10,10 @@ interface ITask {
   text: string | null
 }
 
-interface IExample4Props {
-  tasks: ITask[]
-  setTasks: React.Dispatch<React.SetStateAction<ITask[]>>
-}
+// interface IExample4Props {
+//   tasks: ITask[]
+//   setTasks: React.Dispatch<React.SetStateAction<ITask[]>>
+// }
 const Example4 = () => {
   const [tasks, setTasks] = useState<ITask[]>([
     { text: 'Тестовая задача #1' },
