@@ -19,27 +19,21 @@ const Example4 = () => {
     { text: 'Тестовая задача #1' },
     { text: 'Тестовая задача #2' }
   ])
-
   const onClickAdd = () => {
     const text = prompt('Текст задачи')
-    const trimmedText = text?.trim()
-
-    if (trimmedText === '') {
-      alert('пустойю строку отправлять нельзя')
-    } else {
-      setTasks([...tasks, { text }])
-    }
     // tasks.push(text)
+    setTasks([...tasks, { text }])
   }
 
   const onClickRemove = (index: number) => {
     // tasks.splice(index, 1)
     setTasks(tasks.filter((_, i) => i !== index))
   }
+
   // вариант 3
   const onClickEdit = (index: number) => {
     const textTask = prompt('Новый Текст задачи')
-    // ХОРОШИЙ вариант похож на ПЕРВыЙ
+    // ХОРОШИЙ вариант похож на ПЕРВАЙ
     setTasks(
       tasks.map((obj, i) => {
         if (index === i) {
@@ -51,7 +45,6 @@ const Example4 = () => {
         return obj
       })
     )
-
     // вариант 2 ПЛОХОЙ
     // const task = tasks[index]
     // task.text = textTask
