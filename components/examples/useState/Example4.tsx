@@ -25,7 +25,7 @@ const Example4 = () => {
     const trimmedText = text?.trim()
 
     if (trimmedText === '') {
-      alert('пустойю строку отправлять нельзя')
+      alert('пустую строку отправлять нельзя')
     } else {
       setTasks([...tasks, { text }])
     }
@@ -68,11 +68,11 @@ const Example4 = () => {
   }
   return (
     <div className="flex items-center justify-center">
-      <div className="flex px-[50px] py-[10px] w-full">
+      <div className="flex px-[50px] py-[10px] ">
         <CardWrapper>
           <div className=" ">
             <SmallTitle>Добавить</SmallTitle>
-            <h3>1. Правильно</h3>
+            <h3 className=" text-lg text-green-700">1. Правильно</h3>
             <p>
               Чтобы добавить новую задачу в массив tasks, правильным способом
               будет использование синтаксиса setTasks([...tasks, text]), который
@@ -113,7 +113,7 @@ const Example4 = () => {
               <strong>2. Один приемлемый</strong>
             </h4>
           </div>
-          <div>
+          <div className="flex flex-col w-full items-center">
             <ul>
               {tasks.map((task, i) => (
                 <li key={i} className="flex gap-5 text-orange-700 items-center">
@@ -132,7 +132,7 @@ const Example4 = () => {
               ))}
             </ul>
             <button
-              className=" bg-[#2d1c8f] text-white font-semibold h-9 rounded-md px-3 "
+              className=" bg-[#2d1c8f] text-white font-semibold h-9 rounded-md px-3 w-full"
               onClick={onClickAdd}
             >
               Добавить

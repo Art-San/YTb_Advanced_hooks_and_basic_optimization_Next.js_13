@@ -21,7 +21,7 @@ function ExampleBad() {
   }
   return (
     <div className="flex items-center justify-center">
-      <div className="flex px-[50px] py-[10px] w-full">
+      <div className="flex px-[50px] py-[10px] w-full justify-center">
         <CardWrapper>
           <SmallTitle>Пример того как не надо делать</SmallTitle>
           <h3 className=" text-lg text-orange-700">

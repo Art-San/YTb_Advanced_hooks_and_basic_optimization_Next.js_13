@@ -21,7 +21,7 @@ const useState = () => {
     <>
       <div className=" flex flex-col">
         <div className="flex justify-center">
-          <Title>UseState</Title>
+          <Title>UseEffect</Title>
         </div>
 
         <div className="flex justify-center mx-6 sm:mx-4 md:mx-20 lg:mx-32 xl:mx-64">
@@ -31,10 +31,30 @@ const useState = () => {
                 Информация
               </AccordionTrigger>
               <AccordionContent className="text-[18px]">
-                <code>useState</code> возвращает кортеж (массив), в котором
-                содержится значение состояния и функция для его изменения. По
-                соглашению название функции изменения состояния начинается с{' '}
-                <code>set</code>.
+                <div className=" flex flex-col gap-3">
+                  <p>
+                    <code>useEffect</code> помогает отслеживать рендеры нашего
+                    приложения. В момент рендера он вызовет переданный ему{' '}
+                    <code>callback</code>. useEffect() может срабатывать при:
+                    каждом ререндере компонента. первом рендере. изменении
+                    какой-то зависимости. Демонтаже компонента.
+                  </p>
+                  <p>
+                    <code> useEffect(() {}) </code> При каждом ререндере
+                  </p>
+                  <p>
+                    <code> useEffect(() {}, []) </code> При первом рендере
+                  </p>
+                  <p>
+                    <code> useEffect(() {}, [someProps1, someProps1]) </code>{' '}
+                    При изменении зависимостей someProps1, someProps1
+                  </p>
+                  <p>
+                    {' '}
+                    <code>useEffect(() return ())</code> вызовется при демонтаже
+                    компонента{' '}
+                  </p>
+                </div>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -44,12 +64,12 @@ const useState = () => {
       <div className="flex flex-col items-center w-[1120px] mx-auto">
         <Subtitle>Примеры</Subtitle>
         <div className=" flex flex-col">
-          <Counter />
+          {/* <Counter />
           <Count />
           <Click />
           <ExampleBad />
           <ExampleColor />
-          <Example4 />
+          <Example4 /> */}
         </div>
       </div>
     </>

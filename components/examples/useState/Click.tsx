@@ -18,7 +18,7 @@ const Click = () => {
   }
   return (
     <div className="flex items-center justify-center">
-      <div className="flex px-[50px] py-[10px] w-full">
+      <div className="flex px-[50px] py-[10px] w-full justify-center">
         <CardWrapper>
           <SmallTitle>При нажатие минус 2 или плюс 1</SmallTitle>
           <p>Вроде работае</p>

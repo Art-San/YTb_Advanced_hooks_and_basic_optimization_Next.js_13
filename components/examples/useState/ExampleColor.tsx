@@ -11,7 +11,7 @@ const ExampleColor = () => {
   // const [colors] = useState(['#18C417 Зеленый', '#c41d17 Красный', '#31598f Синий'])
   return (
     <div className="flex items-center justify-center">
-      <div className="flex px-[50px] py-[10px] w-full">
+      <div className="flex px-[50px] py-[10px] w-full justify-center">
         <CardWrapper>
           <SmallTitle>Если данные не меняются</SmallTitle>
           <p className="text-[#2c6499]">
