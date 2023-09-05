@@ -15,6 +15,7 @@ import Count from '@/components/examples/useState/Count'
 import Click from '@/components/examples/useState/Click'
 import ExampleBad from '@/components/examples/useState/ExampleBad'
 import ExampleColor from '@/components/examples/useState/ExampleColor'
+import Example4 from '@/components/examples/useState/Example4'
 
 const useState = () => {
   return (
@@ -50,7 +51,8 @@ const useState = () => {
         {/* <Count /> */}
         {/* <Click /> */}
         {/* <ExampleBad /> */}
-        <ExampleColor />
+        {/* <ExampleColor /> */}
+        <Example4 />
       </div>
     </>
   )

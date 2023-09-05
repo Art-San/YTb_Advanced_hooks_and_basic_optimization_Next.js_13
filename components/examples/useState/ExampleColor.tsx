@@ -5,7 +5,7 @@ import { Separator } from '@/components/ui/separator'
 import SmallTitle from '@/components/typografy/SmallTitle'
 import ImageModal from '@/components/ImageModal'
 
-const colors = ['#18C417 Зеленый', '#c41d17 Красный', '#2c6499 Синий']
+const colors = ['#319452 Зеленый', '#ec3b3b Красный', '#2c6499 Синий']
 
 const ExampleColor = () => {
   // const [colors] = useState(['#18C417 Зеленый', '#c41d17 Красный', '#31598f Синий'])
@@ -34,6 +34,7 @@ const ExampleColor = () => {
           path500="/images/useState_500.png"
         />
       </div>
+      <div className=" text-[#319452]"></div>
     </div>
   )
 }
