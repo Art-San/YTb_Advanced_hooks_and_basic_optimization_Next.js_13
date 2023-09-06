@@ -1,5 +1,4 @@
 import Title from '@/components/typografy/Title'
-
 import React from 'react'
 import {
   Accordion,
@@ -9,14 +8,10 @@ import {
 } from '@/components/ui/accordion'
 import Subtitle from '@/components/typografy/Subtitle'
 
-import Counter from '@/components/examples/useState/Counter'
-import Count from '@/components/examples/useState/Count'
-import Click from '@/components/examples/useState/Click'
-import ExampleBad from '@/components/examples/useState/ExampleBad'
-import ExampleColor from '@/components/examples/useState/ExampleColor'
-import Example4 from '@/components/examples/useState/Example4'
+import RenderCountExample2 from '@/components/examples/useEffect/renderCount2'
+import PrevStateExample from '@/components/examples/useRef/PrevStateExample'
 
-const useState = () => {
+const useEffect = () => {
   return (
     <>
       <div className=" flex flex-col">
@@ -40,19 +35,31 @@ const useState = () => {
                     какой-то зависимости. Демонтаже компонента.
                   </p>
                   <p>
-                    <code> useEffect(() {}) </code> При каждом ререндере
+                    <code className=" text-orange-700 text-xl">
+                      useEffect(() {}){' '}
+                    </code>{' '}
+                    При каждом ререндере
                   </p>
                   <p>
-                    <code> useEffect(() {}, []) </code> При первом рендере
+                    <code className=" text-orange-700 text-xl">
+                      {' '}
+                      useEffect(() {}, []){' '}
+                    </code>{' '}
+                    При первом рендере
                   </p>
                   <p>
-                    <code> useEffect(() {}, [someProps1, someProps1]) </code>{' '}
+                    <code className=" text-orange-700 text-xl">
+                      {' '}
+                      useEffect(() {}, [someProps1, someProps1]){' '}
+                    </code>{' '}
                     При изменении зависимостей someProps1, someProps1
                   </p>
                   <p>
                     {' '}
-                    <code>useEffect(() return ())</code> вызовется при демонтаже
-                    компонента{' '}
+                    <code className=" text-orange-700 text-xl">
+                      useEffect(() return ())
+                    </code>{' '}
+                    вызовется при демонтаже компонента{' '}
                   </p>
                 </div>
               </AccordionContent>
@@ -64,16 +71,12 @@ const useState = () => {
       <div className="flex flex-col items-center w-[1120px] mx-auto">
         <Subtitle>Примеры</Subtitle>
         <div className=" flex flex-col">
-          {/* <Counter />
-          <Count />
-          <Click />
-          <ExampleBad />
-          <ExampleColor />
-          <Example4 /> */}
+          <RenderCountExample2 />
+          <PrevStateExample />
         </div>
       </div>
     </>
   )
 }
 
-export default useState
+export default useEffect

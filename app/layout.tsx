@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="relative">
         {/* <body className={inter.className}> */}
-        {/* <Navbar /> */}
+        <Navbar />
         <div>{children}</div>
         {/* <Footer /> */}
         {/* <ModalProvider /> */}
