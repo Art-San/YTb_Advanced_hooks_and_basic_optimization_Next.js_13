@@ -40,3 +40,46 @@ export const footerLinks = [
     ]
   }
 ]
+
+// https://react.dev/
+export const pointsMenu: {
+  title: string
+  href: string
+  description: string
+}[] = [
+  {
+    title: 'UseState',
+    href: '/hooks/usestate',
+    description:
+      'Возвращает значение с состоянием и функцию для его обновления.'
+  },
+  {
+    title: 'UseEffect',
+    href: '/hooks/useeffect',
+    description: 'Позволяет синхронизировать компонент с внешней системой.'
+  },
+  {
+    title: 'UseContext',
+    href: '/hooks/useContext',
+    description:
+      'Позволяет читать контекст вашего компонента и подписываться на него.'
+  },
+  {
+    title: 'UseRef',
+    href: '/hooks/useref',
+    description:
+      'Позволяет ссылаться на значение, которое не требуется для рендеринга.'
+  },
+  {
+    title: 'UseMemo',
+    href: '/hooks/usememo',
+    description:
+      'Позволяет кэшировать результат вычислений между повторными рендерингами.'
+  },
+  {
+    title: 'UseCallback',
+    href: '/hooks/usecallback',
+    description:
+      'Позволяет кэшировать определение функции между повторными рендерингами.'
+  }
+]
