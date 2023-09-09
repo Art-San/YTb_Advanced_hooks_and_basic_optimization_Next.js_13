@@ -7,7 +7,6 @@ import ImageModal from '@/components/ImageModal'
 
 const PrevStateExample = () => {
   const prevState = useRef('')
-  console.log('prevState', prevState)
   const [otherState, setOtherState] = useState('false')
   const toggleOtherState = () => {
     setOtherState((prevState) => (prevState === 'false' ? 'true' : 'false'))

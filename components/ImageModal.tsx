@@ -33,7 +33,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ path500, path }) => {
       {isOpen && (
         <div
           onClick={closeModal}
-          className="fixed w-full h-full top-0 left-0 flex items-center justify-center"
+          className="fixed w-full h-full top-0 left-0 z-10 flex items-center justify-center"
         >
           {/* <div className="absolute w-full h-full  "></div> */}
 

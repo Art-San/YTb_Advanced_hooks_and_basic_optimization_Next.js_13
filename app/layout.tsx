@@ -24,7 +24,7 @@ export default function RootLayout({
         {/* <body className={inter.className}> */}
         {/* <Navbar /> */}
         <NavigationMenuDemo />
-        {/* <div>{children}</div> */}
+        <div>{children}</div>
         {/* <Footer /> */}
         {/* <ModalProvider /> */}
       </body>
